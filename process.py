@@ -1,18 +1,17 @@
 import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions, StandardOptions
 import os
-from apache_beam import window
 
 
-# Replace 'my-service-account-path' with your service account path
+
 service_account_path = '/Users/Cris/code/cristianlagranda/gcp/udemypubsub-7ada4e500482.json'
 print("Service account file : ", service_account_path)
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = service_account_path
 
-# Replace 'my-input-subscription' with your input subscription id
+
 input_subscription = 'projects/udemypubsub/subscriptions/Subscribe1'
 
-# Replace 'my-output-subscription' with your output subscription id
+
 output_topic = 'projects/udemypubsub/topics/Topic2'
 
 options = PipelineOptions()

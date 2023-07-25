@@ -4,17 +4,17 @@ from google.cloud import pubsub_v1
 
 if __name__ == "__main__":
 
-    # Replace 'my-project' with your project id
+
     project = 'udemypubsub'
 
-    # Replace 'my-topic' with your pubsub topic
+
     pubsub_topic = 'projects/udemypubsub/topics/Topic1'
 
-    # Replace 'my-service-account-path' with your service account path
+
     path_service_account = '/Users/Cris/code/cristianlagranda/gcp/udemypubsub-7ada4e500482.json'
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = path_service_account
 
-    # Replace 'my-input-file-path' with your input file path
+
     input_file = 'counts.csv'
 
     # create publisher
